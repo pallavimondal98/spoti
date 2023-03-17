@@ -12,10 +12,10 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songs =[
     {songName: "Call Me Senorita", filepath:"songs/1.mp3",  coverPath:"cover/1.jpg"},
     {songName: "Who Says",filepath:"songs/2.mp3",  coverPath:"cover/2.jpg"},
-    {songName: "One Less Lonly Girl", filepath:"songs/3.mp3",  coverPath:"cover/3.jpg"},
+    {songName: "One Less Lonely Girl", filepath:"songs/3.mp3",  coverPath:"cover/3.jpg"},
     {songName: "Mummy Papa", filepath:"songs/4.mp3",  coverPath:"cover/4.jpg"},
-    {songName: "Sarminda Hoon", filepath:"songs/5.mp3",  coverPath:"cover/5.jpg"},
-    {songName: "Agar Tum Sath Ho", filepath:"songs/6.mp3",  coverPath:"cover/6.jpg"},
+    {songName: "Sharminda Hoon", filepath:"songs/5.mp3",  coverPath:"cover/5.jpg"},
+    {songName: "Agar Tum Saath Ho", filepath:"songs/6.mp3",  coverPath:"cover/6.jpg"},
     {songName: "Pehli Dafa", filepath:"songs/7.mp3",  coverPath:"cover/7.jpg"},
     {songName: "Dheere Dheere", filepath:"songs/8.mp3",  coverPath:"cover/8.jpg"},
     {songName: "Dhichkyaaon Doom Doom Doom", filepath:"songs/9.mp3",  coverPath:"cover/9.jpg"},

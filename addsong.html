@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>song spot</title>
+    <link rel="icon" href="img/music-memos.png">
+</head>
+<body class="hol">
+    <div class="sun" >
+
+        <form action="#">
+            <div class="fa-close-btn" onclick="window.location.href ='index.html';"  type="button">X</div>
+        <div class="title">Add a new song</div>
+            <div class="user-details">
+                
+                <div class="input-box">
+                    <span class="details">Song Name</span>
+                    <input type="text" placeholder="Enter Song Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Date of Release</span>
+                    <input type="text" placeholder="Enter Date" required>
+                </div>
+                <div class="imo">
+                    <span class="">Artwork</span>
+                    <input type="file" id="file" accept="image/*">
+                    <label for="file">
+                        <!--<i class="fa-solid fa-rectangle-history-circle-plus"></i>-->
+                        <span class="material-icons">
+                            add_a_photo
+                            </span> &nbsp;
+                        Upload Image
+                    </label>
+                </div>
+                <div class="input-box">
+                    <span class="details">Artists</span>
+                    <select class="options">
+                        <option>Select Artist name</option>
+                        <option>Justin Bieber</option>
+                        <option>KK</option>
+                        <option>Swasti Mehul</option>
+                        <option>Selena Gomez</option>
+                        <option>Yo Yo Honey Singh</option>
+                        <option>Arijit Singh</option>
+                        <option>Darshan Raval</option>
+                        <option>Atif Ali Khan</option>
+                    </select>
+                    <button  class="fa-button" onclick="togglePopup()">+ Add Artist</button>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Done">
+                    <input type="reset" value="cancel">
+
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    
+    <div class="popup" id="popup-1">
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">X</div>
+        
+    
+            <h1>Add Artist</h1>
+            <div class="input-field">
+                <input value="" ="text" class="validate" placeholder="Artist Name">
+            </div>
+            <div class="input-field">
+                <input value="" ="text" class="validate" placeholder="Date of Birth">
+            </div>
+            <div class="input-field">
+                <input value="" ="text" class="validate" placeholder="Bio">
+            </div>
+            <button class="first-button" type="reset">cancel</button>
+            <button class="second-button" type="submit">Done</button>
+        </div>
+    </div>
+    
+    <!---<button onclick="togglePopup()"> class="third-button">sing In</button>--->
+    
+    <script>
+        function togglePopup(){
+            document.getElementById("popup-1")
+            .classList.toggle("active")
+        }
+    </script>
+    <!--<script src="https://kit.fontawesome.com/1aaa24b118.js" crossorigin="anonymous"></script>--->
+
+</body>
+</html>
